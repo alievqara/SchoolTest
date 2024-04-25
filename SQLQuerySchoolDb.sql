@@ -1,0 +1,118 @@
+﻿Create Database SchoolDB
+
+Use SchoolDB
+
+ Create Table Teachers
+ (
+	Id int Primary Key,
+	Name nvarchar(100) Not Null,
+	Surname nvarchar(100) Not Null,
+	Age int Not Null
+)
+
+
+Insert Into Teachers Values
+(1, 'Faig', 'Aliyev',28),
+(2, 'Svetlana', 'Petrova',30),
+(3, 'Elvira', 'Ivanova',45),
+(4, 'Marina', 'Karpova',25),
+(5, 'Nadejda', 'Aleksandrova',32)
+
+ Create Table Students
+ (
+	Id int Primary Key,
+	Name nvarchar(100) Not Null,
+	Surname nvarchar(100) Not Null,
+	Age int Not Null,
+	TeacherID int Not Null,
+	Foreign key (TeacherID) References Teachers(ID)
+
+)
+
+Insert Into Students Values
+(1, 'Petya', 'Ivanov',14,1),
+(2, 'Marina',' Ivanova', 14,1),
+(3, 'Aygun', 'Hesenova',14,2),
+(4, 'Marina', 'Mamedova',14,3),
+(5, 'Aksana', 'Aleksandrova',14,1),
+(6, 'Emiliya', 'Petrova',14,3),
+(7, 'Valentina', 'Ivanov',14,4)
+
+ Create Table Lessons
+ (
+	Id int Primary Key,
+	Name nvarchar(100) Not Null,
+
+)
+
+Insert Into Lessons Values
+(1, 'Mathematics'),
+(2, 'History'),
+(3, 'Foreign language')
+
+ Create Table Exams
+ (
+	Id int Primary Key,
+	DateExams Date,
+	StudentId int Not Null,
+	Foreign key (StudentId) References Students(ID),
+	LessonID int Not Null,
+	Foreign key (LessonId) References Lessons(ID),
+	Score Decimal Not Null
+)
+
+
+Insert Into Exams Values
+(1, '2021-09-09', 8,1,49),
+(2, '2020-09-09', 1,1,29),
+(3, '2021-08-03', 2,1,45),
+(4, '2022-01-09', 3,1,37),
+(5, '2022-01-01', 4,2,90),
+(6, '2021-09-02', 2,2,100),
+(7, '2021-02-09', 3,3,55),
+(8, '2021-09-09', 6,2,60),
+(9, '2021-09-09', 7,1,78),
+(10, '2021-09-09', 6,1,49),
+(11, '2021-09-09', 1,1,29),
+(12, '2021-08-03', 2,1,45)
+
+
+
+--1.  Сколько учеников у каждого учителя. Сортировать по количеству учеников 
+--от меньшего
+
+SELECT Teachers.Name, COUNT(Students.ID) AS NumberOfStudents
+FROM Teachers
+LEFT JOIN Students ON Teachers.ID = Students.TeacherID
+GROUP BY Teachers.ID, Teachers.Name
+ORDER BY NumberOfStudents;
+
+--2.  Найти ученика, у которого максимальный бал по Математике с 01.01.2021 
+--по 01.01.2022, не брать учителей, у которых возраст старше 40.
+
+SELECT TOP 1 Students.Name
+FROM Students
+JOIN Exams ON Students.ID = Exams.StudentID
+JOIN Teachers ON Students.TeacherID = Teachers.ID
+JOIN Lessons ON Exams.LessonID = Lessons.ID
+WHERE Lessons.Name = 'Mathematics' 
+    AND Exams.DateExams BETWEEN '2021-01-01' AND '2022-01-01'
+    AND Teachers.Age <= 40
+ORDER BY Exams.Score DESC;
+
+--3. Найти ученика, который третий по баллам по Математике с 01.01.2021 по 01.01.2022.
+
+SELECT Students.Name
+FROM Students
+JOIN Exams ON Students.ID = Exams.StudentID
+JOIN Teachers ON Students.TeacherID = Teachers.ID
+JOIN Lessons ON Exams.LessonID = Lessons.ID
+WHERE Lessons.Name = 'Mathematics' 
+    AND Exams.DateExams BETWEEN '2021-01-01' AND '2022-01-01'
+GROUP BY Students.ID, Students.Name
+ORDER BY SUM(Exams.Score) DESC
+OFFSET 2 ROWS FETCH NEXT 1 ROWS ONLY;
+
+
+
+
