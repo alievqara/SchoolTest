@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WebSites\\SchoolTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E8C15DD-DEBD-4736-9DA5-80D52D184E01}|Manage\\Manage.csproj|d:\\websites\\schooltest\\manage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E8C15DD-DEBD-4736-9DA5-80D52D184E01}|Manage\\Manage.csproj|solutionrelative:manage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aliev\\AppData\\Local\\Temp\\.vsdbgsrc\\ebc62fdba091bc1d8a39a93979f2418b5ca87340b602559bd1792121dbb40739\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aliev\\AppData\\Local\\Temp\\.vsdbgsrc\\ebc62fdba091bc1d8a39a93979f2418b5ca87340b602559bd1792121dbb40739\\Program.cs",
+              "ToolTip": "C:\\Users\\aliev\\AppData\\Local\\Temp\\.vsdbgsrc\\ebc62fdba091bc1d8a39a93979f2418b5ca87340b602559bd1792121dbb40739\\Program.cs [Read Only]",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAhwEsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T13:58:21.14Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\WebSites\\SchoolTest\\Manage\\Program.cs",
+              "RelativeDocumentMoniker": "Manage\\Program.cs",
+              "ToolTip": "D:\\WebSites\\SchoolTest\\Manage\\Program.cs",
+              "RelativeToolTip": "Manage\\Program.cs",
+              "ViewState": "AQIAANkAAAAAAAAAAAAQwPwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T10:27:05.177Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 156,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

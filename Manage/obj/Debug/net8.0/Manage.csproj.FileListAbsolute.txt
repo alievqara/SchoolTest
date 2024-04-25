@@ -1,0 +1,14 @@
+D:\WebSites\SchoolTest\Manage\bin\Debug\net8.0\Manage.exe
+D:\WebSites\SchoolTest\Manage\bin\Debug\net8.0\Manage.deps.json
+D:\WebSites\SchoolTest\Manage\bin\Debug\net8.0\Manage.runtimeconfig.json
+D:\WebSites\SchoolTest\Manage\bin\Debug\net8.0\Manage.dll
+D:\WebSites\SchoolTest\Manage\bin\Debug\net8.0\Manage.pdb
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\Manage.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\Manage.AssemblyInfoInputs.cache
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\Manage.AssemblyInfo.cs
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\Manage.csproj.CoreCompileInputs.cache
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\Manage.dll
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\refint\Manage.dll
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\Manage.pdb
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\Manage.genruntimeconfig.cache
+D:\WebSites\SchoolTest\Manage\obj\Debug\net8.0\ref\Manage.dll
